@@ -4,6 +4,8 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="PhysicsEngine/PhysicsEngine.vcxproj" />
-  <Project Path="UniverseSim/UniverseSim.csproj" />
+  <Project Path="PhysicsEngine/PhysicsEngine.vcxproj" Id="52f707fa-73ff-49a7-b1f8-2ed624146574" />
+  <Project Path="UniverseSim/UniverseSim.csproj">
+    <BuildDependency Project="PhysicsEngine/PhysicsEngine.vcxproj" />
+  </Project>
 </Solution>
