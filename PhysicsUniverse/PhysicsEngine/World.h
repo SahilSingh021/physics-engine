@@ -12,4 +12,6 @@ private:
 public:
 	void AddBody(Body b);
 	void Step(float deltaTime);
+	int GetBodyCount();
+	Body& GetBody(int index);
 };

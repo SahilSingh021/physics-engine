@@ -13,3 +13,13 @@ void World::Step(float deltaTime)
 		b.position += b.velocity * deltaTime;
 	}
 }
+
+int World::GetBodyCount()
+{
+	return (int)bodies.size();
+}
+
+Body& World::GetBody(int index)
+{
+	return bodies[index];
+}

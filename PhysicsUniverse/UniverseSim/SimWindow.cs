@@ -17,7 +17,7 @@ namespace UniverseSim
             _renderer.Initialize(hwnd, width, height);
         }
 
-        protected override void OnPaint(PaintEventArgs e)
+        public void RenderFrame()
         {
             _renderer.Render();
         }

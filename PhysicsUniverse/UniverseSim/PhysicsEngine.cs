@@ -18,5 +18,11 @@ namespace UniverseSim
 
         [DllImport("PhysicsEngine.dll")]
         public static extern void Step(IntPtr world, float deltaTime);
+
+        [DllImport("PhysicsEngine.dll")]
+        public static extern int GetBodyCount(IntPtr world);
+
+        [DllImport("PhysicsEngine.dll")]
+        public static extern void GetBodyPosition(IntPtr world, int index, out float x, out float y);
     }
 }
